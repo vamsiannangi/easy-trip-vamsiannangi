@@ -19,6 +19,8 @@ public class Airport {
         this.city = city;
     }
 
+
+
     public String getAirportName() {
         return airportName;
     }
