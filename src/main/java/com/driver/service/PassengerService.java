@@ -23,22 +23,4 @@ public class PassengerService {
 
     }
 
-
-//    public String bookATicket(Integer flightId, Integer passengerId) {
-//        passengerRepository.addSamplePassengers();
-//        flightRepository.addSampleFlights();
-//        Flight flight = flightRepository.getFlightById(flightId);
-//        Passenger passenger = passengerRepository.getPassengerById(passengerId);
-//        if(flight == null || passenger == null) return "flight or passenger does not exist";
-//
-//        int numberOfPassengersBookedFlight = flightRepository.numberOfTicketForFlight(flightId);
-//
-//        if(numberOfPassengersBookedFlight >= flight.getMaxCapacity()){
-//            return "FAILURE";
-//        }
-//
-//        return  passengerRepository.bookATicket(flightId,passengerId);
-//    }
-
-
 }

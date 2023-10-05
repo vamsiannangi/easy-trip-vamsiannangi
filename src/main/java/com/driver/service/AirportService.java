@@ -16,10 +16,9 @@ import java.util.List;
 @Service
 public class AirportService {
 
-    @Autowired
     private AirportRepository airportRepository;
     private FlightRepository flightRepository;
-
+    @Autowired
     public AirportService(AirportRepository airportRepository, FlightRepository flightRepository) {
         this.airportRepository = airportRepository;
         this.flightRepository = flightRepository;
@@ -45,7 +44,7 @@ public class AirportService {
         SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
         String givenDateString = dateFormat.format(date);
 
-        List<Flight> flightList = flightRepository.getAllFlight();
+        List<Flight> flightList = flightRepository.getAllFlights();
         if (flightList == null || flightList.isEmpty()) return 0;
 
         List<Flight> flights = new ArrayList<>();

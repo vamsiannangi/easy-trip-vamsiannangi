@@ -69,8 +69,6 @@ public class PassengerRepository {
         if (passengers.contains(passengerId)) {
             return "FAILURE: Passenger is already booked for this flight";
         }
-
-        // If the passenger is not already booked, book the ticket
         passengers.add(passengerId);
         return "SUCCESS";
     }
@@ -78,8 +76,5 @@ public class PassengerRepository {
     public List<Integer> getBookingPassengersByFlightIds(Integer flightId) {
         return flightPassengerMap.get(flightId);
     }
-
-//    public String bookATicket(Integer flightId, Integer passengerId) {
-//    }
 
 }

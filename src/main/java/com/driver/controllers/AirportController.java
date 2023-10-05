@@ -15,7 +15,6 @@ import org.springframework.web.bind.annotation.*;
 import java.util.Date;
 
 @RestController
-@RequestMapping("/api")
 public class AirportController {
 
     private AirportService airportService;
@@ -82,7 +81,7 @@ private PassengerService passengerService;
         // then return a "FAILURE" message
         // Otherwise return a "SUCCESS" message
         // and also cancel the ticket that passenger had booked earlier on the given flightId
-return flightService.cancleTicket(flightId,passengerId);
+return flightService.cancelTicket(flightId,passengerId);
     }
 
 
