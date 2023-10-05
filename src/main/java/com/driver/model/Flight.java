@@ -13,9 +13,8 @@ public class Flight {
     private int maxCapacity;
 
     private Date flightDate;
-
     private double duration;
-
+    private int bookedTickets;
     public Flight() {
 
     }
@@ -27,6 +26,15 @@ public class Flight {
         this.maxCapacity = maxCapacity;
         this.flightDate = flightDate;
         this.duration = duration;
+        this.bookedTickets = 0;
+    }
+
+    public int getBookedTickets() {
+        return bookedTickets;
+    }
+
+    public void setBookedTickets(int bookedTickets) {
+        this.bookedTickets = bookedTickets;
     }
 
     public int getFlightId() {
